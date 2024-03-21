@@ -6,22 +6,6 @@ import alerta from "@/icons/alerta-dark.png"
 import crescimento from "@/images/crescimento.png"
 import crescimentoM from "@/images/crescimentoM.png"
 import vender from "@/images/vender-mais.png"
-import giovanna from "@/images/giovanna.png"
-import giovannaM from "@/images/giovannaM.png"
-import luciano from "@/images/luciano-ribeiro.png"
-import lucianoM from "@/images/luciano-ribeiroM.png"
-import sonaly from "@/images/sonaly-dantas.png"
-import sonalyM from "@/images/sonaly-dantasM.png"
-import amanda from "@/images/joão-e-amanda.png"
-import amandaM from "@/images/joão-e-amandaM.png"
-import patricia from "@/images/patricia-regina.png"
-import patriciaM from "@/images/patricia-reginaM.png"
-import joao from "@/images/joão-dantas.png"
-import joaoM from "@/images/joão-dantasM.png"
-import paulo from "@/images/paulo-de-lima.png"
-import pauloM from "@/images/paulo-de-limaM.png"
-import saed from "@/images/saed-alex.png"
-import saedM from "@/images/saed-alexM.png"
 import arrowR from "@/icons/arrow-right.png"
 import Testimonials from "../Dialog/youtubeDialog-light"
 
@@ -30,8 +14,8 @@ export default function light(){
     return(
         <main>
             <section className="sm:flex sm:flex-col items-center">
-                <div className="w-full h-[8rem] bg-[#F5FF00] shadow-x3 flex justify-between sm:hidden ">
-                <Image className="h-full" src={linesL} alt=""/>
+                <div className="w-full min-h-[8rem] bg-[#F5FF00] shadow-x3 flex justify-between sm:hidden ">
+                <Image className="h-auto" src={linesL} alt=""/>
                 <div className="flex items-center gap-8">
                     <Image src={alerta} alt=""/>
                     <p className="text-[1.25rem] font-medium leading-[2rem]">
@@ -39,14 +23,14 @@ export default function light(){
                     80% das pessoas que clicam, incluindo os curiosos, acabam comprando. E não é nada barato.
                     </p>
                 </div>
-                <Image className="h-full" src={linesR} alt=""/>
+                <Image className="h-auto" src={linesR} alt=""/>
                 </div>
                 <div>
                     <Image className="hidden sm:block -mt-[7.55rem] " src={vender} alt=""/>
                     <Image className="sm:hidden w-full" src={crescimento} alt=""/>
                     <Image className=" hidden sm:block -mt-[7.55rem]" src={crescimentoM} alt=""/>
                 </div>
-                <section className="radial-light-top text-black font-medium sm:py-16 py-[7.5rem]">
+                <section className="radial-light-top text-black font-medium sm:py-16 py-[7.5rem] ">
                     <h1 className="text-[2.5rem] sm:text-[1.5rem] font-bold leading-12 text-center ">
                     Olha só o que aconteceu com as pessoas que <br className="sm:hidden" /> clicaram no botão “Quero vender mais”:
                     </h1>

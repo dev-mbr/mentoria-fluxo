@@ -29,7 +29,7 @@ export default function dark(){
     return(
         <main>
             <section className="sm:flex sm:flex-col items-center">
-                <div className="w-full h-[8rem] bg-[#F5FF00] shadow-x3 flex justify-between sm:hidden">
+                <div className="w-full min-h-[8rem] bg-[#F5FF00] shadow-x3 flex justify-between sm:hidden">
                 <Image className="h-full" src={linesL} alt=""/>
                 <div className="flex items-center gap-8">
                     <Image src={alerta} alt=""/>

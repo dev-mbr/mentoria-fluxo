@@ -178,7 +178,7 @@ function YoutubeDialog() {
 
   return (
     <div>
-      <div className="w-[75rem] sm:w-[21.4rem] mx-auto mt-[5rem] sm:mt-[2.5rem] flex flex-wrap gap-10">
+      <div className="max-w-[75rem] sm:w-[21.4rem] mx-auto mt-[5rem] sm:mt-[2.5rem] flex flex-wrap justify-center gap-10">
         {depoimentos.map((depoimento, index) => (
           <div key={index} className="w-[16.875rem] sm:w-[21.375rem] bg-[#292929] rounded-2xl pb-6 cursor-pointer" onClick={() => openModal(depoimento.embedId)}>
             
