@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-import { createContext, useContext } from 'react';
 import Dialog from './index';
 import Image from 'next/image';
 
@@ -182,8 +181,8 @@ function YoutubeDialog() {
         {depoimentos.map((depoimento, index) => (
           <div key={index} className="w-[16.875rem] sm:w-[21.375rem] bg-white rounded-2xl pb-6 cursor-pointer" onClick={() => openModal(depoimento.embedId)}>
             
-            <Image className="sm:hidden" src={`/images/${depoimento.thumb}`} alt={depoimento.nome} layout="responsive" width={262} height={228} />
-            <Image className="hidden sm:block rounded-t-2xl" src={`/images/${depoimento.thumb2}`} alt={depoimento.nome} layout="responsive" width={262} height={228} />
+            <Image className="sm:hidden" src={`/fluxo/publico-frio/images/${depoimento.thumb}`} alt={depoimento.nome} layout="responsive" width={262} height={228} />
+            <Image className="hidden sm:block rounded-t-2xl" src={`/fluxo/publico-frio/images/${depoimento.thumb2}`} alt={depoimento.nome} layout="responsive" width={262} height={228} />
             <div className="w-[13.875rem] sm:w-[18.375rem] mx-auto mt-6">
               <h1 className="text-[1.25rem] font-bold">
                 {depoimento.nome}
