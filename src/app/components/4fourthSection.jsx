@@ -14,7 +14,7 @@ import arrR from "@/icons/arrow-right.png"
 export default function fourth(){
     return(
         <main className="bg-[#F5F5F5] pb-[7.5rem] sm:pb-16">
-            <Image className="absolute right-0 sm:hidden" src={linesMD} />
+            <Image className="absolute right-0 sm:hidden" src={linesMD} alt=""/>
             <section className="flex flex-col items-center">
                 <div className="sm:flex sm:flex-col sm:items-center">
                     <div className="text-[#585852] font-medium text-[1.25rem] sm:text-[1rem] ml-12 sm:mx-auto mt-[7.5rem] sm:mt-16 sm:text-center sm:w-[21.4rem]">
@@ -29,8 +29,8 @@ export default function fourth(){
                         </p>
                     </div>
                     <div>
-                        <Image className="sm:hidden" src={conversas}/>
-                        <Image className="hidden sm:block" src={conversasM}/>
+                        <Image className="sm:hidden" src={conversas} alt=""/>
+                        <Image className="hidden sm:block" src={conversasM} alt=""/>
                     </div>
                 </div>
             </section>

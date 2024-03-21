@@ -139,7 +139,7 @@ export default function second(){
                         </p>
                     </div>
                 </div>
-                <Image src={zoom} alt />
+                <Image src={zoom} alt="" />
             </section>
             <section className="bg-[#F5F5F5] pt-[5.5rem] lg:pb-[5.5rem]">
                 <div className="text-center text-[#585852] text-[1.25rem] sm:text-[1rem]">

@@ -82,8 +82,8 @@ export default function sixth(){
                     </h1>
                     <div className="flex flex-wrap gap-10 sm:gap-4">
                         <div className="mt-[3.5rem] sm:mt-8">
-                            <Image className="rounded-[1rem] sm:hidden" src={cris}/>
-                            <Image className="rounded-[1rem] hidden sm:block" src={crisM}/>
+                            <Image className="rounded-[1rem] sm:hidden" src={cris} alt=""/>
+                            <Image className="rounded-[1rem] hidden sm:block" src={crisM} alt=""/>
                             <h2 className="text-[1.5rem] sm:text-[1rem] mt-8">
                             Crislaine
                             </h2>
@@ -92,8 +92,8 @@ export default function sixth(){
                             </p>
                         </div>
                         <div className="mt-[3.5rem] sm:mt-8">
-                            <Image className="rounded-[1rem] sm:hidden" src={thais}/>
-                            <Image className="rounded-[1rem] hidden sm:block" src={thaisM}/>
+                            <Image className="rounded-[1rem] sm:hidden" src={thais} alt=""/>
+                            <Image className="rounded-[1rem] hidden sm:block" src={thaisM} alt=""/>
                         <h2 className="text-[1.5rem] sm:text-[1rem] mt-8">
                         Thais
                         </h2>
@@ -102,8 +102,8 @@ export default function sixth(){
                         </p>
                         </div>
                         <div className="mt-[3.5rem] sm:mt-8">
-                            <Image className="rounded-[1rem] sm:hidden" src={leo}/>
-                            <Image className="rounded-[1rem] hidden sm:block" src={leoM}/>
+                            <Image className="rounded-[1rem] sm:hidden" src={leo} alt=""/>
+                            <Image className="rounded-[1rem] hidden sm:block" src={leoM} alt=""/>
                             <h2 className="text-[1.5rem] sm:text-[1rem] mt-8">
                             Leo
                             </h2>
@@ -112,8 +112,8 @@ export default function sixth(){
                             </p>
                         </div>
                         <div className="mt-[3.5rem] sm:mt-8">
-                            <Image className="rounded-[1rem] sm:hidden" src={tassia}/>
-                            <Image className="rounded-[1rem] hidden sm:block" src={tassiaM}/>
+                            <Image className="rounded-[1rem] sm:hidden" src={tassia} alt=""/>
+                            <Image className="rounded-[1rem] hidden sm:block" src={tassiaM} alt=""/>
                             <h2 className="text-[1.5rem] sm:text-[1rem] mt-8">
                             Tássia
                             </h2>
@@ -122,8 +122,8 @@ export default function sixth(){
                             </p>
                         </div>
                         <div className="mt-[3.5rem] sm:mt-8">
-                            <Image className="rounded-[1rem] sm:hidden" src={paloma}/>
-                            <Image className="rounded-[1rem] hidden sm:block w-[10.125rem]" src={palomaM}/>
+                            <Image className="rounded-[1rem] sm:hidden" src={paloma} alt=""/>
+                            <Image className="rounded-[1rem] hidden sm:block w-[10.125rem]" src={palomaM} alt=""/>
                             <h2 className="text-[1.5rem] sm:text-[1rem] mt-8">
                             Paloma
                             </h2>
@@ -132,8 +132,8 @@ export default function sixth(){
                             </p>
                         </div>
                         <div className="mt-[3.5rem] sm:mt-8">
-                            <Image className="rounded-[1rem] sm:hidden" src={angela}/>
-                            <Image className="rounded-[1rem] hidden sm:block w-[10.125rem]" src={angelaM}/>
+                            <Image className="rounded-[1rem] sm:hidden" src={angela} alt=""/>
+                            <Image className="rounded-[1rem] hidden sm:block w-[10.125rem]" src={angelaM} alt=""/>
                             <h2 className="text-[1.5rem] sm:text-[1rem] mt-8">
                             Angela
                             </h2>
@@ -142,8 +142,8 @@ export default function sixth(){
                             </p>
                         </div>
                         <div className="mt-[3.5rem] sm:mt-8">
-                            <Image className="rounded-[1rem] sm:hidden" src={felipe}/>
-                            <Image className="rounded-[1rem] hidden sm:block" src={felipeM}/>
+                            <Image className="rounded-[1rem] sm:hidden" src={felipe} alt=""/>
+                            <Image className="rounded-[1rem] hidden sm:block" src={felipeM} alt=""/>
                             <h2 className="text-[1.5rem] sm:text-[1rem] mt-8">
                             Felipe
                             </h2>
