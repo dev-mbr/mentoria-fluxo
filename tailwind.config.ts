@@ -15,7 +15,7 @@ const config: Config = {
       screens: {
         'sm': {'min': '300px', 'max': '1024px'},
         'mm': {'min': '1025px', 'max': '1564px'},
-        'lg': '1025px'
+        'lg': '1565px'
       },
       boxShadow: {
         'x1': '0px 4px 48px 0px rgba(0, 0, 0, 0.04)',

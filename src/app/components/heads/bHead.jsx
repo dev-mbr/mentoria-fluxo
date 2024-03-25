@@ -2,9 +2,9 @@
 import Image from "next/image";
 import logo from "@/icons/logo.png"
 import mentorados from "@/images/mentorados.png"
-import arrowR from "@/icons/arrow-right.png"
 import leandro from "@/images/multiverso-leandro.png"
 import leandroM from "@/images/multiverso-leandroM.png"
+import Btn from "../Button/VenderMais"
 
 
 export default function bHead(){
@@ -27,10 +27,7 @@ export default function bHead(){
                                 + de 2 mil  mentorados Fluxo
                                 </p>
                             </div>
-                            <button className="bg-[#F5FF00] text-black text-[1.25rem] font-bold uppercase flex justify-center items-center w-[22.0625rem] rounded-2xl py-4 gap-4">
-                            Quero vender mais
-                            <Image src={arrowR} alt=""/>
-                            </button>
+                            <Btn id="bhead" />
                         </div>
                     </div>
                     <Image className="sm:hidden " src={leandro} alt=""/>

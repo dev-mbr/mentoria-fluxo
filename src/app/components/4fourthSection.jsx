@@ -4,11 +4,10 @@ import conversas from "@/images/conversas.png"
 import conversasM from "@/images/conversas-mobile.png"
 import linesMD from "@/images/lines-black-md.svg"
 import alerta from "@/icons/alerta.png"
-import textao from "@/images/textão.png"
-import textaoM from "@/images/textão-mobile.png"
+import textao from "@/images/textao.png"
 import linesLeft from "@/icons/lines-grey-left.png"
 import linesRight from "@/icons/lines-grey-right.png"
-import arrR from "@/icons/arrow-right.png"
+import Btn from "./Button/VenderMais"
 
 
 export default function fourth(){
@@ -59,15 +58,10 @@ export default function fourth(){
                         <h1 className="text-[#2E2E2B] text-[2.5rem] sm:text-[1.5rem] font-bold ">
                         Entre no Fluxo
                         </h1>
-                        <p className="text-[#585852] text-[1.25rem] sm:text-[1rem] leading-[2rem] sm:leading-[1.5rem] mt-8 sm:mt-6">
+                        <p className="text-[#585852] text-[1.25rem] sm:text-[1rem] leading-[2rem] sm:leading-[1.5rem] my-8 sm:my-6">
                         Agende a apresentação construa um <br /> negócio consistente e sólido com a nossa <br /> <strong>mentoria individual de 12 meses.</strong> 
                         </p>
-                        <a href="">
-                            <button className="w-[22.1rem] h-[3.88rem] bg-[#F5FF00]  rounded-[1rem] flex gap-4 justify-center items-center text-black text-[1.25rem] font-bold shadow-btn uppercase mt-8 sm:mt-6">
-                            Quero vender mais
-                            <Image src={arrR} alt=""/>
-                            </button>
-                        </a>
+                        <Btn id="fourth"/>
 
                     </div>
             </section>

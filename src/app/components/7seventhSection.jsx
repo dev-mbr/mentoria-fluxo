@@ -9,6 +9,8 @@ import yellowLinesL from "@/images/lines-yellow-left.svg"
 import yellowLinesR from "@/images/lines-yellow-rigth.svg"
 import logos from "@/icons/logos.png"
 import logosM from "@/icons/logosM.png"
+import Btn from "./Button/VenderMais"
+
 
 export default function seventh(){
     return(
@@ -18,11 +20,8 @@ export default function seventh(){
                 <Image className="hidden sm:block" src={desabilitadaM} alt=""/>
                 <div className="flex flex-col items-center mt-4">
                     <div className="bg-[#F5FF00] w-12 h-[.4375rem]"></div>
-                    <h1 className="text-[2.5rem] sm:text-[1.5rem] font-bold mt-6 ">Entre no Fluxo</h1>
-                    <button className="bg-[#F5FF00] text-black text-[1.25rem] font-bold uppercase flex justify-center items-center w-[22.0625rem] rounded-2xl py-4 gap-4 mt-10">
-                    Quero vender mais
-                    <Image src={arrowR} alt=""/>
-                    </button>
+                    <h1 className="text-[2.5rem] sm:text-[1.5rem] font-bold my-6 ">Entre no Fluxo</h1>
+                    <Btn id="seven"/>
                     <p className="mt-10 text-[1.25rem] sm:text-[1rem] leading-8 w-[36rem] sm:w-[21.375rem] text-center">
                     Se você chegou até aqui e ainda não se convenceu de que precisa urgentemente agendar uma apresentação, <strong>preciso te dar um aviso muito importante:</strong> 
                     </p>

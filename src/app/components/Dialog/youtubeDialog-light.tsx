@@ -60,8 +60,8 @@ const depoimentos = [
         “Foi a segunda melhor decisão da nossa vida”. <br className="sm:hidden" /> E qual foi a primeira? Sim, vou te fazer assistir ao vídeo para saber.
       </>
     ),
-    thumb: "joão-e-amanda.png",
-    thumb2: "joão-e-amandaM.png",
+    thumb: "joao-e-amanda.png",
+    thumb2: "joao-e-amandaM.png",
     embedId: "Z0sDJQpK5EY",
   },
   {
@@ -88,9 +88,9 @@ const depoimentos = [
         dos sonhos: “Só quero agradecer ao time da mentoria”.
       </>
     ),
-    thumb: "joão-dantas.png",
-    thumb2: "joão-dantasM.png",
-    embedId: "L2m7ma6wtFM",
+    thumb: "joao-dantas.png",
+    thumb2: "joao-dantasM.png",
+    embedId: "N8BD312hMfI",
   },
   {
     nome: "Paulo de Lima",
