@@ -31,10 +31,10 @@ export default function aHead({ setToggleModal }) {
                 <Image src={mentorados} alt="" />
                 <p className="font-medium">+ de 2 mil mentorados Fluxo</p>
               </div>
-              <Btn setToggleModal={setToggleModal} id="ahead" />
+              <Btn setToggleModal={setToggleModal} />
             </div>
           </div>
-          <Image className="sm:hidden " src={leandro} alt="" />
+          <Image className="sm:hidden" src={leandro} alt="" />
         </div>
         <Image className="hidden sm:block mx-auto" src={leandroM} alt="" />
       </section>

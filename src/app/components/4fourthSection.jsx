@@ -10,7 +10,7 @@ import linesRight from "@/icons/lines-grey-right.png"
 import Btn from "./Button/VenderMais"
 
 
-export default function fourth(){
+export default function fourth({ setToggleModal }){
     return(
         <main className="bg-[#F5F5F5] pb-[7.5rem] sm:pb-16">
             <Image className="absolute right-0 sm:hidden" src={linesMD} alt=""/>
@@ -61,7 +61,7 @@ export default function fourth(){
                         <p className="text-[#585852] text-[1.25rem] sm:text-[1rem] leading-[2rem] sm:leading-[1.5rem] my-8 sm:my-6">
                         Agende a apresentação construa um <br /> negócio consistente e sólido com a nossa <br /> <strong>mentoria individual de 12 meses.</strong> 
                         </p>
-                        <Btn id="fourth"/>
+                        <Btn setToggleModal={setToggleModal} />
 
                     </div>
             </section>

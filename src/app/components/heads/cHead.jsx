@@ -7,7 +7,7 @@ import leandroM from "@/images/leandro-palestraM.png"
 import Btn from "../Button/VenderMais"
 
 
-export default function bHead(){
+export default function bHead({ setToggleModal }){
     return(
         <main>
             <section className="bg-[#F5F5F5] pt-[6.89rem] sm:pt-[2.5rem]">
@@ -28,7 +28,7 @@ export default function bHead(){
                                     + de 2 mil  mentorados Fluxo
                                     </p>
                                 </div>
-                            <Btn id="chead" />
+                            <Btn setToggleModal={setToggleModal} />
                                 
                             </div>
                         </div>

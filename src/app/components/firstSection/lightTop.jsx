@@ -11,7 +11,7 @@ import Btn from "../Button/VenderMais"
 
 
 
-export default function light(){
+export default function light({ setToggleModal }){
     return(
         <main>
             <section className="sm:flex sm:flex-col items-center">
@@ -43,7 +43,7 @@ export default function light(){
                     <p className="my-8 sm:my-6">
                     Agende a apresentação construa um <br className=" sm:hidden" /> negócio consistente  e sólido com a nossa <br className=" sm:hidden" /><strong> mentoria individual de 12 meses.</strong>
                     </p>
-                    <Btn id="light"/>
+                    <Btn setToggleModal={setToggleModal}/>
                     </div>
                 </section>
             </section>

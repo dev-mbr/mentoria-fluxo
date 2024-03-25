@@ -58,7 +58,7 @@ export default function dark({ setToggleModal }) {
               <br className=" sm:hidden" />
               <strong> mentoria individual de 12 meses.</strong>
             </p>
-            <Btn setToggleModal={setToggleModal} id="dark" />
+            <Btn setToggleModal={setToggleModal} />
           </div>
         </section>
       </section>

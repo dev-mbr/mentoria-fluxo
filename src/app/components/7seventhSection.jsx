@@ -12,7 +12,7 @@ import logosM from "@/icons/logosM.png"
 import Btn from "./Button/VenderMais"
 
 
-export default function seventh(){
+export default function seventh({ setToggleModal }){
     return(
         <main className="bg-black text-white">
             <section className="flex flex-col items-center font-medium">
@@ -21,7 +21,7 @@ export default function seventh(){
                 <div className="flex flex-col items-center mt-4">
                     <div className="bg-[#F5FF00] w-12 h-[.4375rem]"></div>
                     <h1 className="text-[2.5rem] sm:text-[1.5rem] font-bold my-6 ">Entre no Fluxo</h1>
-                    <Btn id="seven"/>
+                    <Btn setToggleModal={setToggleModal} />
                     <p className="mt-10 text-[1.25rem] sm:text-[1rem] leading-8 w-[36rem] sm:w-[21.375rem] text-center">
                     Se você chegou até aqui e ainda não se convenceu de que precisa urgentemente agendar uma apresentação, <strong>preciso te dar um aviso muito importante:</strong> 
                     </p>
@@ -58,10 +58,7 @@ export default function seventh(){
                         Não subestime a Cris. <br className="hidden sm:block"/> As oportunidades que ela vai te oferecer são absurdas. <br className="hidden sm:block"/> Agende a ligação de apresentação agora mesmo.
                         </p>
                     </div>
-                    <button className="bg-[#F5FF00] text-black text-[1.25rem] font-bold uppercase flex justify-center items-center w-[22.0625rem] sm:w-[19.75rem] rounded-2xl py-4 gap-4 mt-10">
-                    Quero vender mais
-                    <Image src={arrowR} alt=""/>
-                    </button>
+                    <Btn className="sm:w-[19.75rem] sm:mt-10 sm:" setToggleModal={setToggleModal} />
                 </div>
             </section>
             <footer className="mt-[7.5rem] sm:mt-16 pb-8">

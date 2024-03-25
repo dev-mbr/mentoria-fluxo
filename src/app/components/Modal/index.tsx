@@ -28,7 +28,7 @@ function Modal({ toggleModal, setToggleModal, children }: Props) {
     >
       <div
         onClick={(e) => preventCloseModal(e)}
-        className="relative flex w-full mx-auto bg-white max-w-4xl rounded-md p-1 md:p-8 h-auto lg:h-[95vh]"
+        className="relative flex w-fit mx-auto bg-white max-w-4xl rounded-md p-1 md:p-8 h-auto lg:h-[95vh]"
       >
         {children}
         <button

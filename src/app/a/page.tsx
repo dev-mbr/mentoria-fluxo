@@ -21,10 +21,10 @@ export default function Home() {
       <DarkTop setToggleModal={setToggleModal} />
       <SecondSection />
       <ThirdSection />
-      <FourthSection />
+      <FourthSection setToggleModal={setToggleModal}/>
       <FifthSection />
       <SixthSection />
-      <SeventhSection />
+      <SeventhSection setToggleModal={setToggleModal}/>
       <Modal toggleModal={toggleModal} setToggleModal={setToggleModal}>
         <div className="mx-auto w-full overflow-auto p-3">
           <h1 className="lg:mb-2 text-[12px] lg:text-[18px] font-bold text-black">
