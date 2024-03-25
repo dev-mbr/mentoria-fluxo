@@ -16,18 +16,7 @@ import Dhead from "./components/heads/dHead"
 export default function Home() {
   return (
     <main>
-      {/* <Dhead/> */}
-      {/* <Chead/> */}
-      {/* <Bhead/> */}
-      <Ahead />
-      <LightTop/>
-      {/* <DarkTop/> */}
-      <SecondSection/>
-      <ThirdSection/>
-      <FourthSection/>
-      <FifthSection/>
-      <SixthSection/>
-      <SeventhSection/>
+      
     </main>
   );
 }

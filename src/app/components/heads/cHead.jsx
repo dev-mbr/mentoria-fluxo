@@ -4,7 +4,7 @@ import logo from "@/icons/logo-dark.png"
 import mentorados from "@/images/mentorados.png"
 import leandro from "@/images/leandro-palestra.png"
 import leandroM from "@/images/leandro-palestraM.png"
-import Btn from "../Button/VenderMais"
+import Btn from "../Button/venderMais"
 
 
 export default function bHead({ setToggleModal }){

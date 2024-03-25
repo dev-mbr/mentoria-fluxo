@@ -32,11 +32,7 @@ export default function Home() {
           </h1>
 
           <div className="flex justify-center mt-5 w-full">
-            <Script
-              src="https://app.nectarcrm.com.br/crm/api/1/webform/view-embedded/zwimOS3nnJ0uUStWmAvqDFbrWXRh9zwaa2vRpaj5M"
-              data-nectar-webform-destination-elem="pagedef"
-              defer
-            ></Script>
+          <Script src="https://app.nectarcrm.com.br/crm/api/1/webform/view-embedded/AVQwx3JudY3lusOkj6uxYvrUKNri00Ku4qfNJ0Vqc4I" data-nectar-webform-destination-elem="pagedef" defer></Script>
             <div id="pagedef" className="h-full w-full"></div>
           </div>
         </div>

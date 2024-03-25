@@ -7,7 +7,7 @@ import crescimento from "@/images/crescimento.png"
 import crescimentoM from "@/images/crescimentoM.png"
 import vender from "@/images/vender-mais.png"
 import Testimonials from "../Dialog/youtubeDialog-light"
-import Btn from "../Button/VenderMais"
+import Btn from "../Button/venderMais"
 
 
 

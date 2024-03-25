@@ -9,7 +9,7 @@ import yellowLinesL from "@/images/lines-yellow-left.svg"
 import yellowLinesR from "@/images/lines-yellow-rigth.svg"
 import logos from "@/icons/logos.png"
 import logosM from "@/icons/logosM.png"
-import Btn from "./Button/VenderMais"
+import Btn from "./Button/venderMais"
 
 
 export default function seventh({ setToggleModal }){
@@ -58,7 +58,7 @@ export default function seventh({ setToggleModal }){
                         Não subestime a Cris. <br className="hidden sm:block"/> As oportunidades que ela vai te oferecer são absurdas. <br className="hidden sm:block"/> Agende a ligação de apresentação agora mesmo.
                         </p>
                     </div>
-                    <Btn className="sm:w-[19.75rem] sm:mt-10 sm:" setToggleModal={setToggleModal} />
+                    <Btn className="sm:w-[19.75rem] mt-10 sm:" setToggleModal={setToggleModal} />
                 </div>
             </section>
             <footer className="mt-[7.5rem] sm:mt-16 pb-8">
