@@ -4,10 +4,10 @@ import logo from "@/icons/logo-dark.png"
 import mentorados from "@/images/mentorados.png"
 import leandro from "@/images/leandro-palestra.png"
 import leandroM from "@/images/leandro-palestraM.png"
-import Btn from "../Button/VenderMais"
+import Btn from "../Button/venderMais"
 
 
-export default function bHead(){
+export default function bHead({ setToggleModal }){
     return(
         <main>
             <section className="bg-[#F5F5F5] pt-[4.5rem] sm:pt-[2.5rem] ">
@@ -17,17 +17,17 @@ export default function bHead(){
                         <h1 className="text-[2.5rem] sm:text-[1.5rem] font-bold leading-[3rem] sm:leading-normal tracking-tighter sm:-tracking-[.015rem] sm:text-center sm:mt-8">
                         Tenha direcionamento individual com os melhores especialistas do mercado e acompanhamento diário para fazer o seu negócio digital vender muito <br className="hidden sm:block" /> todos os dias.                        
                         </h1>
-                        <div className="flex flex-col justify-center sm:items-center sm:text-center">
-                            <div className="text-[1.25rem] sm:text-[1rem] font-medium leading-[1.275rem] sm:leading-6 w-[34.75rem] text-[#585852] flex items-end gap-1">
+                        <div className="flex flex-col justify-center sm:w-full sm:mx-auto sm:items-center sm:text-center">
+                            <div className="text-[1.25rem] sm:text-[1rem] font-medium leading-[1.275rem] sm:leading-6 w-[34.75rem] sm:w-[23rem] text-[#585852] flex items-end gap-1">
                             <p className="mb-[0.65rem] text-[2.5rem]">.</p><p>De <strong>NEWBIE</strong> para <strong>SOFT</strong> (do 0 até os R$ 10k)</p>
                             </div>
-                            <div className="text-[1.25rem] sm:text-[1rem] font-medium leading-[1.275rem] sm:leading-6 w-[34.75rem] text-[#585852] flex items-end gap-1">
+                            <div className="text-[1.25rem] sm:text-[1rem] font-medium leading-[1.275rem] sm:leading-6 w-[34.75rem] sm:w-[23rem] text-[#585852] flex items-end gap-1">
                             <p className="mb-[0.65rem] text-[2.5rem]">.</p><p>De <strong>SOFT</strong> para <strong>HARD</strong> (R$ 10k para R$ 100k)</p>
                             </div>
-                            <div className="text-[1.25rem] sm:text-[1rem] font-medium leading-[1.275rem] sm:leading-6 w-[34.75rem] text-[#585852] flex items-end gap-1">
+                            <div className="text-[1.25rem] sm:text-[1rem] font-medium leading-[1.275rem] sm:leading-6 w-[34.75rem] sm:w-[23rem] text-[#585852] flex items-end gap-1">
                             <p className="mb-[0.65rem] text-[2.5rem]">.</p><p>De <strong>HARD</strong> para <strong>PRO</strong> (R$ 100k para R$ 2M) </p>
                             </div>
-                            <div className="text-[1.25rem] sm:text-[1rem] font-medium leading-[1.275rem] sm:leading-6 w-[34.75rem] text-[#585852] flex items-end gap-1">
+                            <div className="text-[1.25rem] sm:text-[1rem] font-medium leading-[1.275rem] sm:leading-6 w-[34.75rem] sm:w-[23rem] text-[#585852] flex items-end gap-1">
                             <p className="mb-[0.65rem] text-[2.5rem]">.</p><p> De <strong>PRO</strong> para <strong>MASTER</strong> (R$ 2M para R$ 10M)</p>
                             </div>
                             
@@ -38,7 +38,7 @@ export default function bHead(){
                                     + de 2 mil  mentorados Fluxo
                                     </p>
                                 </div>
-                                <Btn id="dhead" />
+                                <Btn setToggleModal={setToggleModal} />
 
                             </div>
                         </div>

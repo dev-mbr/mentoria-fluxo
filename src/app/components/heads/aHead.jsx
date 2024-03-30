@@ -3,7 +3,7 @@ import logo from "@/icons/logo.png";
 import mentorados from "@/images/mentorados.png";
 import leandro from "@/images/multiverso-leandro.png";
 import leandroM from "@/images/multiverso-leandroM.png";
-import Btn from "../Button/VenderMais";
+import Btn from "../Button/venderMais";
 
 export default function aHead({ setToggleModal }) {
   return (
@@ -31,10 +31,10 @@ export default function aHead({ setToggleModal }) {
                 <Image src={mentorados} alt="" />
                 <p className="font-medium">+ de 2 mil mentorados Fluxo</p>
               </div>
-              <Btn setToggleModal={setToggleModal} id="ahead" />
+              <Btn setToggleModal={setToggleModal} />
             </div>
           </div>
-          <Image className="sm:hidden " src={leandro} alt="" />
+          <Image className="sm:hidden" src={leandro} alt="" />
         </div>
         <Image className="hidden sm:block mx-auto" src={leandroM} alt="" />
       </section>

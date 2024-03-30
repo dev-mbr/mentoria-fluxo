@@ -4,10 +4,10 @@ import logo from "@/icons/logo-dark.png"
 import mentorados from "@/images/mentorados.png"
 import leandro from "@/images/leandro-palestra.png"
 import leandroM from "@/images/leandro-palestraM.png"
-import Btn from "../Button/VenderMais"
+import Btn from "../Button/venderMais"
 
 
-export default function bHead(){
+export default function bHead({ setToggleModal }){
     return(
         <main>
             <section className="bg-[#F5F5F5] pt-[6.89rem] sm:pt-[2.5rem]">
@@ -28,7 +28,7 @@ export default function bHead(){
                                     + de 2 mil  mentorados Fluxo
                                     </p>
                                 </div>
-                            <Btn id="chead" />
+                            <Btn setToggleModal={setToggleModal} />
                                 
                             </div>
                         </div>

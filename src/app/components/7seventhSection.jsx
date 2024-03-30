@@ -9,7 +9,7 @@ import yellowLinesL from "@/images/lines-yellow-left.svg";
 import yellowLinesR from "@/images/lines-yellow-rigth.svg";
 import logos from "@/icons/logos.png";
 import logosM from "@/icons/logosM.png";
-import Btn from "./Button/VenderMais";
+import Btn from "./Button/venderMais";
 
 export default function seventh({ setToggleModal }) {
   return (
@@ -22,7 +22,7 @@ export default function seventh({ setToggleModal }) {
           <h1 className="text-[2.5rem] sm:text-[1.5rem] font-bold my-6 ">
             Entre no Fluxo
           </h1>
-          <Btn setToggleModal={setToggleModal} id="seven" />
+          <Btn setToggleModal={setToggleModal} />
           <p className="mt-10 text-[1.25rem] sm:text-[1rem] leading-8 w-[36rem] sm:w-[21.375rem] text-center">
             Se você chegou até aqui e ainda não se convenceu de que precisa
             urgentemente agendar uma apresentação,{" "}
@@ -68,10 +68,10 @@ export default function seventh({ setToggleModal }) {
               apresentação agora mesmo.
             </p>
           </div>
-          <button className="bg-[#F5FF00] text-black text-[1.25rem] font-bold uppercase flex justify-center items-center w-[22.0625rem] sm:w-[19.75rem] rounded-2xl py-4 gap-4 mt-10">
-            Quero vender mais
-            <Image src={arrowR} alt="" />
-          </button>
+          <Btn
+            className="sm:w-[19.75rem] mt-10 sm:"
+            setToggleModal={setToggleModal}
+          />
         </div>
       </section>
       <footer className="mt-[7.5rem] sm:mt-16 pb-8">

@@ -7,7 +7,7 @@ import alerta from "@/icons/alerta.png";
 import textao from "@/images/textao.png";
 import linesLeft from "@/icons/lines-grey-left.png";
 import linesRight from "@/icons/lines-grey-right.png";
-import Btn from "./Button/VenderMais";
+import Btn from "./Button/venderMais";
 
 export default function fourth({ setToggleModal }) {
   return (
@@ -70,7 +70,7 @@ export default function fourth({ setToggleModal }) {
             sólido com a nossa <br />{" "}
             <strong>mentoria individual de 12 meses.</strong>
           </p>
-          <Btn setToggleModal={setToggleModal} id="fourth" />
+          <Btn setToggleModal={setToggleModal} />
         </div>
       </section>
     </main>

@@ -7,7 +7,7 @@ import crescimento from "@/images/crescimento.png";
 import crescimentoM from "@/images/crescimentoM.png";
 import vender from "@/images/vender-mais.png";
 import Testimonials from "../Dialog/youtubeDialog";
-import Btn from "../Button/VenderMais";
+import Btn from "../Button/venderMais";
 
 export default function dark({ setToggleModal }) {
   return (
@@ -58,7 +58,7 @@ export default function dark({ setToggleModal }) {
               <br className=" sm:hidden" />
               <strong> mentoria individual de 12 meses.</strong>
             </p>
-            <Btn setToggleModal={setToggleModal} id="dark" />
+            <Btn setToggleModal={setToggleModal} />
           </div>
         </section>
       </section>

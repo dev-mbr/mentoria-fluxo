@@ -42,16 +42,33 @@ export default function Home() {
       <DarkTop setToggleModal={setToggleModal} />
       <SecondSection />
       <ThirdSection />
-      <FourthSection />
+      <FourthSection setToggleModal={setToggleModal} />
       <FifthSection />
       <SixthSection />
-      <SeventhSection />
+
+      <SeventhSection setToggleModal={setToggleModal} />
       <FormInfusion
         setToggleModal={setToggleModal}
         toggleModal={toggleModal}
         xid={"a0ff22918822f8ed1c89a2ad5ac48b22"}
       />
       <SuccessRedirect urlRedirect={urlCloseModalSuccess} />
+      <Modal toggleModal={toggleModal} setToggleModal={setToggleModal}>
+        <div className="mx-auto w-full overflow-auto p-3">
+          <h1 className="lg:mb-2 text-[12px] lg:text-[18px] font-bold text-black">
+            Agendar Ligação de Apresentação
+          </h1>
+
+          <div className="flex justify-center mt-5 w-full">
+            <Script
+              src="https://app.nectarcrm.com.br/crm/api/1/webform/view-embedded/OyJyJVtEnoWfcss4qqmgwxYIbpoptqIffPbDhlCmc"
+              data-nectar-webform-destination-elem="pagedef"
+              defer
+            ></Script>
+            <div id="pagedef" className="h-full w-full"></div>
+          </div>
+        </div>
+      </Modal>
     </main>
   );
 }

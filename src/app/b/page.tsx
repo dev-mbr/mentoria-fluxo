@@ -8,26 +8,39 @@ import SixthSection from "../components/6sixthSection";
 import SeventhSection from "../components/7seventhSection";
 import DarkTop from "../components/firstSection/darkTop";
 import Head from "../components/heads/bHead";
-import DataLayer from "../components/DataLayer";
+import Modal from "../components/Modal";
+import Script from "next/script";
+import { useState } from "react";
 
 export default function Home() {
+  const [toggleModal, setToggleModal] = useState(false);
+
   return (
     <main>
-      <DataLayer
-        type_page="captura"
-        id_produto="1296776"
-        operacao="ppt"
-        type_content="organico"
-        versao_pico="ppt"
-      />
-      <Head />
-      <DarkTop setToggleModal={() => console.log("first")} />
+      <Head setToggleModal={setToggleModal} />
+      <DarkTop setToggleModal={setToggleModal} />
       <SecondSection />
       <ThirdSection />
-      <FourthSection />
+      <FourthSection setToggleModal={setToggleModal} />
       <FifthSection />
       <SixthSection />
-      <SeventhSection />
+      <SeventhSection setToggleModal={setToggleModal} />
+      <Modal toggleModal={toggleModal} setToggleModal={setToggleModal}>
+        <div className="mx-auto w-full overflow-auto p-3">
+          <h1 className="lg:mb-2 text-[12px] lg:text-[18px] font-bold text-black">
+            Agendar Ligação de Apresentação
+          </h1>
+
+          <div className="flex justify-center mt-5 w-full">
+            <Script
+              src="https://app.nectarcrm.com.br/crm/api/1/webform/view-embedded/nOuHygIjIFbTD9d21ZNkEakE580mrG0IUc3HTOnJjw"
+              data-nectar-webform-destination-elem="pagedef"
+              defer
+            ></Script>
+            <div id="pagedef" className="h-full w-full"></div>
+          </div>
+        </div>
+      </Modal>
     </main>
   );
 }

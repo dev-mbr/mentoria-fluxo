@@ -4,10 +4,10 @@ import logo from "@/icons/logo.png"
 import mentorados from "@/images/mentorados.png"
 import leandro from "@/images/multiverso-leandro.png"
 import leandroM from "@/images/multiverso-leandroM.png"
-import Btn from "../Button/VenderMais"
+import Btn from "../Button/venderMais"
 
 
-export default function bHead(){
+export default function bHead({ setToggleModal }){
     return(
         <main>
             <section className="dark-head-gradient text-white  pt-[4.5rem] sm:pt-[2.5rem]">
@@ -27,7 +27,7 @@ export default function bHead(){
                                 + de 2 mil  mentorados Fluxo
                                 </p>
                             </div>
-                            <Btn id="bhead" />
+                            <Btn setToggleModal={setToggleModal} />
                         </div>
                     </div>
                     <Image className="sm:hidden " src={leandro} alt=""/>
