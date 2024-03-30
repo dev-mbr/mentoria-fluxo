@@ -4,9 +4,10 @@ type Props = {
   toggleModal: boolean;
   setToggleModal: (toggleModal: boolean) => void;
   children: React.ReactNode;
+  className?: string;
 };
 
-function Modal({ toggleModal, setToggleModal, children }: Props) {
+function Modal({ toggleModal, setToggleModal, className, children }: Props) {
   const preventCloseModal = (e: any) => {
     e.stopPropagation();
   };
@@ -28,7 +29,7 @@ function Modal({ toggleModal, setToggleModal, children }: Props) {
     >
       <div
         onClick={(e) => preventCloseModal(e)}
-        className="relative flex w-full mx-auto bg-white max-w-4xl rounded-md p-1 md:p-8 h-auto lg:h-[95vh]"
+        className={`relative flex w-full mx-auto bg-white max-w-4xl rounded-md p-1 md:p-8 h-auto ${className} `}
       >
         {children}
         <button
