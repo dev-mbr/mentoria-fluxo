@@ -137,7 +137,11 @@ function FormInfusion({ xid, toggleModal, setToggleModal }: Props) {
           type="hidden"
           value={pathpage ? pathpage : ""}
         />
-        <input name="urlredirect" type={"hidden"} value={"fluxo" + pathpage} />
+        <input
+          name="urlredirect"
+          type={"hidden"}
+          value={"fluxo-publico-frio" + pathpage}
+        />
         <input name="typeredirect" type={"hidden"} value={"fluxo"} />
         <div className="infusion-field w-full">
           <input

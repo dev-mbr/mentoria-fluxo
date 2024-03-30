@@ -12,7 +12,7 @@ function SuccessRedirect({ urlRedirect }: Props) {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    if (router.get("wpp") === "true") {
+    if (router.get("type_success") === "fluxo") {
       setShow(true);
     }
   }, [router]);
