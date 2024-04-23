@@ -19,6 +19,7 @@ function DataLayer({
     setTimeout(() => {
       if (typeof window !== "undefined") {
         (window as any).dataLayer.push({
+          event: "dtrtg",
           type_page: type_page,
           // Exemplo:
           //'geral','captura','confirme','confirmado','cpl','venda','blog'
