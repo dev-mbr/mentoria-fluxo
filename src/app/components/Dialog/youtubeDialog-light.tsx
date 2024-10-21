@@ -182,7 +182,7 @@ function YoutubeDialog() {
           >
             <Image
               className="sm:hidden"
-              src={`/fluxo/images/${depoimento.thumb}`}
+              src={`/fluxo/pb/images/${depoimento.thumb}`}
               alt={depoimento.nome}
               layout="responsive"
               width={262}
@@ -190,7 +190,7 @@ function YoutubeDialog() {
             />
             <Image
               className="hidden sm:block rounded-t-2xl"
-              src={`/fluxo/images/${depoimento.thumb2}`}
+              src={`/fluxo/pb/images/${depoimento.thumb2}`}
               alt={depoimento.nome}
               layout="responsive"
               width={262}
