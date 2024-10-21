@@ -1,22 +1,22 @@
 "use client";
-import Image from "next/image";
 import SecondSection from "../components/2secondSection";
 import ThirdSection from "../components/3thirdSection";
 import FourthSection from "../components/4fourthSection";
 import FifthSection from "../components/5fifthSection";
 import SixthSection from "../components/6sixthSection";
 import SeventhSection from "../components/7seventhSection";
-import DarkTop from "../components/firstSection/darkTop";
-import Ahead from "../components/heads/aHead";
+import DataLayer from "../components/DataLayer";
+import LightTop from "../components/firstSection/lightTop";
+import FormInfusion from "../components/FormInfusion";
+import Head from "../components/heads/dHead";
 import Modal from "../components/Modal";
 import Script from "next/script";
 import { useState } from "react";
-import DataLayer from "../components/DataLayer";
-import FormInfusion from "../components/FormInfusion";
 import SuccessRedirect from "../components/SuccessRedirect";
 import { usePathname, useSearchParams } from "next/navigation";
+import FormActive from "../components/FormActive";
 
-export default function PageA() {
+export default function PageD() {
   const [toggleModal, setToggleModal] = useState(false);
   const pathpage = useSearchParams();
   const pathname = usePathname();
@@ -27,7 +27,7 @@ export default function PageA() {
   const utm_source = pathpage.get("utm_source");
   const utm_term = pathpage.get("utm_term");
 
-  const urlCloseModalSuccess = `/fluxo-publico-frio/a?conversion=${conversion}&utm_campaign=${utm_campaign}&utm_content=${utm_content}&utm_medium=${utm_medium}&utm_source=${utm_source}&utm_term=${utm_term}`;
+  const urlCloseModalSuccess = `/pb-frio-d?conversion=${conversion}&utm_campaign=${utm_campaign}&utm_content=${utm_content}&utm_medium=${utm_medium}&utm_source=${utm_source}&utm_term=${utm_term}`;
 
   return (
     <main>
@@ -38,19 +38,19 @@ export default function PageA() {
         type_content="organico"
         versao_pico="ppt"
       />
-      <Ahead setToggleModal={setToggleModal} />
-      <DarkTop setToggleModal={setToggleModal} />
+      <Head setToggleModal={setToggleModal} />
+      <LightTop setToggleModal={setToggleModal} />
       <SecondSection />
       <ThirdSection />
       <FourthSection setToggleModal={setToggleModal} />
       <FifthSection />
       <SixthSection />
-
       <SeventhSection setToggleModal={setToggleModal} />
-      <FormInfusion
+      <FormActive
+        funnel="f-ads-pages"
+        pathpage={"pb-frio-d"}
         setToggleModal={setToggleModal}
         toggleModal={toggleModal}
-        xid={"a78f37436a0ee8d9412b83f9e3dea1f5"}
       />
 
       <SuccessRedirect urlRedirect={urlCloseModalSuccess} />

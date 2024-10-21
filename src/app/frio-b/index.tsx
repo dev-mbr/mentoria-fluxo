@@ -15,6 +15,7 @@ import FormInfusion from "../components/FormInfusion";
 import SuccessRedirect from "../components/SuccessRedirect";
 import { usePathname, useSearchParams } from "next/navigation";
 import DataLayer from "../components/DataLayer";
+import FormActive from "../components/FormActive";
 
 export default function PageB() {
   const [toggleModal, setToggleModal] = useState(false);
@@ -27,7 +28,7 @@ export default function PageB() {
   const utm_source = pathpage.get("utm_source");
   const utm_term = pathpage.get("utm_term");
 
-  const urlCloseModalSuccess = `/fluxo-publico-frio/b?conversion=${conversion}&utm_campaign=${utm_campaign}&utm_content=${utm_content}&utm_medium=${utm_medium}&utm_source=${utm_source}&utm_term=${utm_term}`;
+  const urlCloseModalSuccess = `/pb-frio-b?conversion=${conversion}&utm_campaign=${utm_campaign}&utm_content=${utm_content}&utm_medium=${utm_medium}&utm_source=${utm_source}&utm_term=${utm_term}`;
 
   return (
     <Suspense>
@@ -47,10 +48,11 @@ export default function PageB() {
         <FifthSection />
         <SixthSection />
         <SeventhSection setToggleModal={setToggleModal} />
-        <FormInfusion
+        <FormActive
+          funnel="f-ads-pages"
+          pathpage={"pb-frio-a"}
           setToggleModal={setToggleModal}
           toggleModal={toggleModal}
-          xid={"630667b666ee9493eff50ca09e2a6d28"}
         />
 
         <SuccessRedirect urlRedirect={urlCloseModalSuccess} />

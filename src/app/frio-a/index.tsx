@@ -1,21 +1,23 @@
 "use client";
+import Image from "next/image";
 import SecondSection from "../components/2secondSection";
 import ThirdSection from "../components/3thirdSection";
 import FourthSection from "../components/4fourthSection";
 import FifthSection from "../components/5fifthSection";
 import SixthSection from "../components/6sixthSection";
 import SeventhSection from "../components/7seventhSection";
-import LightTop from "../components/firstSection/lightTop";
-import FormInfusion from "../components/FormInfusion";
-import Head from "../components/heads/cHead";
+import DarkTop from "../components/firstSection/darkTop";
+import Ahead from "../components/heads/aHead";
 import Modal from "../components/Modal";
 import Script from "next/script";
 import { useState } from "react";
-import SuccessRedirect from "../components/SuccessRedirect";
 import DataLayer from "../components/DataLayer";
+import FormInfusion from "../components/FormInfusion";
+import SuccessRedirect from "../components/SuccessRedirect";
 import { usePathname, useSearchParams } from "next/navigation";
+import FormActive from "../components/FormActive";
 
-export default function PageC() {
+export default function PageA() {
   const [toggleModal, setToggleModal] = useState(false);
   const pathpage = useSearchParams();
   const pathname = usePathname();
@@ -26,7 +28,9 @@ export default function PageC() {
   const utm_source = pathpage.get("utm_source");
   const utm_term = pathpage.get("utm_term");
 
-  const urlCloseModalSuccess = `/fluxo-publico-frio/c?conversion=${conversion}&utm_campaign=${utm_campaign}&utm_content=${utm_content}&utm_medium=${utm_medium}&utm_source=${utm_source}&utm_term=${utm_term}`;
+  const urlCloseModalSuccess = `/pb/frio-a/?conversion=${conversion}&utm_campaign=${utm_campaign}&utm_content=${utm_content}&utm_medium=${utm_medium}&utm_source=${utm_source}&utm_term=${utm_term}`;
+
+  const pathpageRedirect = encodeURIComponent("fluxo/pb/frio-a");
 
   return (
     <main>
@@ -37,18 +41,20 @@ export default function PageC() {
         type_content="organico"
         versao_pico="ppt"
       />
-      <Head setToggleModal={setToggleModal} />
-      <LightTop setToggleModal={setToggleModal} />
+      <Ahead setToggleModal={setToggleModal} />
+      <DarkTop setToggleModal={setToggleModal} />
       <SecondSection />
       <ThirdSection />
       <FourthSection setToggleModal={setToggleModal} />
       <FifthSection />
       <SixthSection />
+
       <SeventhSection setToggleModal={setToggleModal} />
-      <FormInfusion
+      <FormActive
+        funnel="f-ads-pages"
+        pathpage={pathpageRedirect}
         setToggleModal={setToggleModal}
         toggleModal={toggleModal}
-        xid={"88a85c1962bedcf44668b040c4177972"}
       />
 
       <SuccessRedirect urlRedirect={urlCloseModalSuccess} />
