@@ -28,7 +28,7 @@ export default function PageB() {
   const utm_source = pathpage.get("utm_source");
   const utm_term = pathpage.get("utm_term");
 
-  const urlCloseModalSuccess = `/pb-frio-b?conversion=${conversion}&utm_campaign=${utm_campaign}&utm_content=${utm_content}&utm_medium=${utm_medium}&utm_source=${utm_source}&utm_term=${utm_term}`;
+  const urlCloseModalSuccess = `/fluxo/pb/frio-b?conversion=${conversion}&utm_campaign=${utm_campaign}&utm_content=${utm_content}&utm_medium=${utm_medium}&utm_source=${utm_source}&utm_term=${utm_term}`;
 
   return (
     <Suspense>
@@ -50,7 +50,7 @@ export default function PageB() {
         <SeventhSection setToggleModal={setToggleModal} />
         <FormActive
           funnel="f-ads-pages"
-          pathpage={"pb-frio-a"}
+          pathpage={"frio-b"}
           setToggleModal={setToggleModal}
           toggleModal={toggleModal}
         />
