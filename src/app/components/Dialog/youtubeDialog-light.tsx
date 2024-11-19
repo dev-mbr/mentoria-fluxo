@@ -128,7 +128,6 @@ function YoutubeDialog() {
   const refDialog = useRef<HTMLDialogElement>(null);
   const [activeEmbedId, setActiveEmbedId] = useState("");
 
-  // Function to open the modal and set the active YouTube embed ID
   const openModal = (embedId: string) => {
     document.body.style.overflow = "hidden";
     setActiveEmbedId(embedId);
@@ -138,6 +137,7 @@ function YoutubeDialog() {
   const closeModal = (animation: string) => {
     document.body.style.overflow = "";
     document.body.style.overflowX = "";
+    setActiveEmbedId(""); // Clear active embed ID to stop video
     if (refDialog.current) {
       refDialog.current.classList.add(animation);
       refDialog.current.addEventListener(
@@ -199,7 +199,6 @@ function YoutubeDialog() {
             <div className="w-[13.875rem] sm:w-[18.375rem] mx-auto mt-6">
               <h1 className="text-[1.25rem] font-bold">{depoimento.nome}</h1>
               <p className="mt-3 text-[#585852]">{depoimento.resumo}</p>
-              {/* Replace the <a> tag with a <button> and attach the openModal function */}
               <button className="underline font-bold mt-5">
                 Assista ao vídeo
               </button>
@@ -217,3 +216,5 @@ function YoutubeDialog() {
 }
 
 export default YoutubeDialog;
+
+

@@ -14,14 +14,14 @@ const Dialog = forwardRef<HTMLDialogElement, Props>(
     return (
       <dialog
         ref={ref}
-        className={`fixed top-0 lg:w-[50rem] rounded-md w-full dialog ${transitions}`}
+        className={`fixed top-0 w-[50rem] rounded-md sm:w-full dialog ${transitions}`}
       >
         <div className="w-full bg-white ">
           {/* <button className="absolute right-0 w-9 h-9 rounded-full bg-black text-white text-[1.5rem] font-bold uppercase ">
               x
           </button> */}
           <iframe
-            className='w-full lg:h-[28rem] sm:h-[15rem] rounded-md'
+            className='w-full h-[28rem] sm:h-[15rem] rounded-md'
             src={`https://www.youtube.com/embed/${activeEmbedId}`}
             title="YouTube video player"
             frameBorder="0"
